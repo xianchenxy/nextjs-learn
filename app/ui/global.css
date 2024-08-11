@@ -1,18 +1,26 @@
+/*@import "https://cdn.jsdelivr.net/npm/lxgw-wenkai-lite-webfont@1.1.0/style.css";*/
+/*@import "https://fonts.googleapis.com/css2?family=Lora&display=swap";*/
+/*@import "https://fonts.googleapis.com/css2?family=Cardo&display=swap";*/
+
+/** {*/
+/*    font-family: LXGW WenKai Lite,serif;*/
+/*}*/
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 input[type='number'] {
-  -moz-appearance: textfield;
-  appearance: textfield;
+    -moz-appearance: textfield;
+    appearance: textfield;
 }
 
 input[type='number']::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
+    -webkit-appearance: none;
+    margin: 0;
 }
 
 input[type='number']::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
+    -webkit-appearance: none;
+    margin: 0;
 }
