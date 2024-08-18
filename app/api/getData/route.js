@@ -3,13 +3,7 @@ import mysql from 'mysql2/promise';
 import { NextResponse } from 'next/server';
 
 // 创建全局的 MySQL 连接池
-const pool = mysql.createPool({
-	connectionLimit: 10,
-	host: process.env.MYSQL_HOST,
-	user: process.env.MYSQL_USER,
-	password: process.env.MYSQL_PASSWORD,
-	database: process.env.MYSQL_DATABASE
-});
+import pool from '~/app/lib/db'
 
 export async function GET(request) {
 	try {
